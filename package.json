@@ -1,0 +1,23 @@
+{
+  "name": "find_falcone",
+  "version": "1.0.0",
+  "description": "Finding Falcone Problem",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhankumar028/find_falcone.git"
+  },
+  "keywords": [],
+  "author": "MadhankumarJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madhankumar028/find_falcone/issues"
+  },
+  "homepage": "https://github.com/madhankumar028/find_falcone#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
