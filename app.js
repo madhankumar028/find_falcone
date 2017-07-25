@@ -8,14 +8,25 @@
     angular.module('find-falcon', ['ui.router'])
     .config(Config);
 
-    function Config($urlRouterProvider, $stateProvider) {
+    Config.$inject = ['$urlRouterProvider', '$stateProvider', '$locationProvider'];
+
+    function Config($urlRouterProvider, $stateProvider, $locationProvider) {
 
         $stateProvider
         .state('search', {
             name: 'search',
             url: '/search',
-            templateUrl: '',
-            controllerAs: ''
+            templateUrl: 'templates/search.html',
+            controllerAs: 'SearchController as SearchCtrl',
+            resolve: {
+                getAllPlanets: function(SearchService) {
+                    return SearchService.getPlanets()
+                        .then(function(response) {
+                            console.log(response);
+                            return response;
+                        });
+                }
+            }
         })
         .state('result', {
             name: 'result',
@@ -24,5 +35,7 @@
         });
 
         $urlRouterProvider.otherwise('/search');
+
+        $locationProvider.html5Mode(true);
     }
 })();

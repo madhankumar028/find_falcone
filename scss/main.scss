@@ -1,0 +1,41 @@
+$color-primary: #f8d14c;
+$color-secondary: #2c9fd1;
+$color-text: #a2a2a2;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 20px;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.8;
+	color: $color-text;
+}
+.nav-links-container {
+	display: block;
+}
+.nav-links {
+	list-style: none;
+	li {
+		float: left;
+		margin: 0 10px;
+	}
+	a {
+    font-size: 16px;
+    border-bottom: 1.5px solid transparent;
+    color: $color-text;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    text-transform: lowercase;
+    transition: all 0.3s ease-in;
+	}
+}
+.destination-select {
+	margin-top: 20px;
+}
+footer {
+	margin-top: 80px;
+}
