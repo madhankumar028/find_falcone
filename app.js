@@ -17,7 +17,7 @@
             name: 'search',
             url: '/search',
             templateUrl: 'templates/search.html',
-            controllerAs: 'SearchController as SearchCtrl',
+            controller: 'SearchController as SearchCtrl',
             resolve: {
                 getAllPlanets: function(SearchService) {
                     return SearchService.getPlanets()

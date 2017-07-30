@@ -27,6 +27,9 @@ body {
     text-transform: lowercase;
     transition: all 0.3s ease-in; }
 
+.dropdown-container {
+  width: 100px; }
+
 .destination-select {
   margin-top: 20px; }
 

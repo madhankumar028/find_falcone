@@ -1,25 +1,29 @@
-<h3 class="text-center">Finding Falcone!</h3>
+<h3 class="text-center">Finding Falcone</h3>
 <div class="container-fluid">
 	<div class="row destination-select">
 		<div class="col-sm-3">
-			<select class="form-group" ng-repeat="planet in SearchCtrl.planets" placeholder="Destination1">
-				<option>{{planet.name}}</option>				
+			<select class="form-group dropdown-container"
+				ng-options="planet.name for planet in SearchCtrl.planets"
+				ng-model="SearchCtrl.selected">				
 			</select>
 		</div>
 		<div class="col-sm-3">
-			<select class="form-group" placeholder="Destination2">
-				
+			<select class="form-group dropdown-container"
+				ng-options="planet.name for planet in SearchCtrl.planets"
+				ng-model="SearchCtrl.selected">
 			</select>
 		</div>
 		<div class="col-sm-3">
-			<select class="form-group" placeholder="Destination3">
-				
-			</select>				
+			<select class="form-group dropdown-container"
+				ng-options="planet.name for planet in SearchCtrl.planets"
+				ng-model="SearchCtrl.selected">
+			</select>
 		</div>
 		<div class="col-sm-3">
-			<select class="form-group" placeholder="Destination4">
-				
-			</select>				
-		</div>
+			<select class="form-group dropdown-container"
+				ng-options="planet.name for planet in SearchCtrl.planets"
+				ng-model="SearchCtrl.selected">
+			</select>
+		</div>		
 	</div>
 </div>

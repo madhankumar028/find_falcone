@@ -8,12 +8,12 @@
 
 	SearchCtrl.$inject = ['getAllPlanets'];
 
-	function SearchCtrl(getAllPlanets) {
+	function SearchCtrl(getAllPlanets, $scope) {
+		
 		var self = this;
-
-		self.planets = getAllPlanets
-
-		console.log(self.planets);
+		
+		self.planets = getAllPlanets;
+		self.selected = self.planets[0].name;
 	}
 
 })();
